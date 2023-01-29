@@ -1,12 +1,16 @@
+  <div class="filv_status">
 
-      <div class="status">
+    <img src="<%= @filv.avatar_image %>">
+    
+    <div class="yuusya_image">
+     <%= link_to image_tag("yuusya.png", size:"250x250", class:"google-btn"), "#" %>
+    </div> 
 
-        <img src="<%= @filv.avatar_image %>">
-        
-        <%= link_to image_tag("yuusya.png", size:"250x250", class:"google-btn"), "#" %>
+    <div class="status">
+      <p class="status__title">Strength: <%= @filv.strength %></p>
+      <p class="status__title">Intelligence: <%= @filv.intelligence %></p>
+      <p class="status__title">Charisma: <%= @filv.charisma %></p>
+    </div> 
 
-        <%= @filv.strength %>
-        <%= @filv.intelligence %>
-        <%= @filv.intelligence %>
+  </div>
 
-      </div>
