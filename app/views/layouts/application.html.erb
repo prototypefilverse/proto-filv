@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProtoFilv</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+      <header class="header">
+        <div class="header__bar">
+          <h1 class="main-title"><a href="/">FIlVerse</a></h1>
+          <div class="top-batton">
+           <a class="my-page" href="/">投稿する</a>
+          </div>
+        </div>
+      </header>
+
+      <%= yield %>
+
+      <footer>
+      <p>Copyright FilVerse 2023.</p>
+      </footer>
+
+  </body>
+
+</html>
