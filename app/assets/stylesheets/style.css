@@ -4,77 +4,63 @@ header {
   text-align: center;
 }
 
+.header_bar {
+  display: flex;
+  align-items: center;
+  }
+
 header h1 {
-  font-family: Arial, sans-serif;
-  font-size: 36px;
-  color: #fff;
-  text-shadow: 1px 1px #000;
-  margin: 0;
+  margin: 0 0 0 60px;
 }
 
-header a {
+.main_title {
+  font-size: 48px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px rgb(79, 66, 66);
   color: #fff;
   text-decoration: none;
-}
+  }
 
-header button {
+.top-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+ }
+
+.my-page, .movie-search, .logout {
   background-color: #fff;
   color: #333;
   padding: 5px 10px;
   border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px rgb(126, 121, 121);
   font-family: Arial, sans-serif;
   font-size: 14px;
   cursor: pointer;
   margin-left: 10px;
-}
-
-.header__bar {
-  display: flex;
-  align-items: center;
-  }
-  
-  .main-title {
-  margin: 0;
-  font-size: 36px;
-  font-weight: bold;
   text-decoration: none;
-  color: #fff;
-  }
-  
-  .top-button {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
   }
   
 
-  
-  
-  .my-page,
-  .logout {
-  background-color: #fff;
-  color: #5f5f5f;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 16px;
-  }
   
   footer {
-  background-color: #5f5f5f;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  }
+    background-color: rgb(161, 232, 210);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    }
   
-  /* 既存のCSS */
+  
   .wrapper {
   display: flex;
   }
   .avatar-side {
-  background-color: #7ca9e4;
+  background-color: #dbdffc;
   width: 500px;
   height: 100vh;
   display: flex;
@@ -84,40 +70,45 @@ header button {
   padding: 50px;
   }
   .reviews-side {
-  background-color: #e0edd9;
+  background-color: #f9d69a;
   width: calc(100vw - 500px);
   padding: 50px;
   }
   
   .filv_status {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
   
   .yuusya_image {
   margin-top: 30px;
   }
   
-  .google-btn {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  border: 1px solid black;
-  }
-  
   .status {
-  margin-top: 30px;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  }
+    margin-top: 30px;
+font-size: 20px;
+font-weight: normal;
+    text-align: center;
+    background-color: #e4e6f2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #333;
+    }
   
-  .status__title {
-  margin-bottom: 20px;
-  }
-  
+    .status__title {
+      margin-bottom: 10px;
+      text-indent: 10px;
+      font-size: 18px;
+      font-style: italic;
+      }
+      
+      .status__value {
+      font-size: 30px;
+      color: #333;
+      }
+
   .reviews {
   text-align: center;
   }
@@ -132,3 +123,5 @@ header button {
   margin-top: 20px;
   font-size: 20px;
   }
+
+  
